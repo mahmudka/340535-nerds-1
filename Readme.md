@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Денис Ахраменко](https://up.htmlacademy.ru/htmlcss/19/user/340535).
-* Наставник: `Без Наставника`.
+* Студент: [Денис Ахраменко](https://up.htmlacademy.ru/htmlcss/18/user/340535).
+* Наставник: [Александр Калинин](https://htmlacademy.ru/profile/id311377).
 
 ---
 
