@@ -1018,6 +1018,13 @@ iframe {
   background-image: url(../img/radio-on.svg);
 }
 
+.filter-option input[type="radio"]:focus ~ label {
+  outline-color: #4D90FE;
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
+}
+
 .grid label:hover::before {
   opacity: 1;
 }
@@ -1052,7 +1059,13 @@ iframe {
 
 .filter-option input[type="checkbox"]:checked ~ label:before {
   background-image: url(../img/checkbox-on.svg);
+}
 
+.filter-option input[type="checkbox"]:focus ~ label {
+  outline-color: #4D90FE;
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
 }
 
 input[type="radio"]:disabled,
