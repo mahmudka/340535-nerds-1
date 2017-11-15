@@ -249,23 +249,24 @@ img {
 
 .slider-1 {
   margin-bottom: 0;
-  background: url("../img/slide1.png") 94% 10%  no-repeat;
+  background: #eeeeee url("../img/slide1.png") 94% 110%  no-repeat;
   background-size: auto;
-  min-height: 450px;
+  min-height: 416px;
+
   }
 
 .slider-2 {
   margin-bottom: 0;
-  background: url("../img/slide2.png") 100% 10%   no-repeat;
+  background: #eeeeee  url("../img/slide2.png") 100% 10%   no-repeat;
   background-size: auto;
   min-height: 417px;
 }
 
 .slider-3 {
   margin-bottom: 0;
-  background: url("../img/slide3.png") 100% 12%  no-repeat;
+  background: #eeeeee  url("../img/slide3.png") 100% 100%  no-repeat;
   background-size: auto;
-  min-height: 450px;
+  min-height: 416px;
 }
 
 .slider div {
@@ -305,6 +306,7 @@ img {
   text-transform: uppercase;
   list-style: none;
   }
+
 .site-navigation li {
   margin-left: -20px;
 }
@@ -856,6 +858,7 @@ iframe {
   margin-left: 140px;
   margin-top: -10px;
 }
+
 /* Страница Каталога*/
 
 .main-header-catalog {
