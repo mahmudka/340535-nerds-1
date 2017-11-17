@@ -61,8 +61,9 @@ a {
 
 .cart  a {
   display: inline-block;
-  background: url("../img/cart-icon.svg") no-repeat left center;
+  background: #eeeeee url("../img/cart-icon.svg") no-repeat left center;
   padding-left: 38px;
+  vertical-align: top;
 }
 
 .btn {
@@ -237,7 +238,7 @@ img {
   width:7px;
   height:7px;
   margin:0 5px;
-  background:white;
+  background:#ffffff;
   border:7px solid white;
   vertical-align:top;
   border-radius:50%;
@@ -286,6 +287,11 @@ img {
   background-size: cover ;
 }
 
+header {
+  background-color: #eeeeee;
+  background-size: cover ;
+}
+
 .logo {
  margin-top: -8px;
 }
@@ -308,7 +314,7 @@ img {
   }
 
 .site-navigation li {
-  margin-left: -20px;
+  margin-left: 5px;
 }
 
 .site-navigation li:nth-child(2) {
@@ -320,7 +326,7 @@ img {
 }
 
 .site-navigation li:last-child {
-  margin-right: 22px;
+  margin-right: 10px;
 }
 
 .main-navigation {
@@ -329,14 +335,17 @@ img {
   align-items: center;
   padding-top: 60px;
   padding-bottom: 3px;
+  background-color: #eeeeee;
 }
 
 .site-navigation   {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-width: 440px;
+  padding-left: 0;
+  width: 450px;
   }
+
 
 .slider b {
   font-size: 55px;
@@ -579,14 +588,30 @@ img {
 .map {
   position: relative;
   margin: 0;
-  /*background: url("../img/map-marker.png"),
-    url("../img/map.jpg") no-repeat;*/
+  background: url("../img/map-marker.png"),
+    url("../img/map.jpg") no-repeat;*
   background-size: auto,cover;
   background-repeat: no-repeat,no-repeat;
-  background-position: 63% 55%;
+  background-position: 65% 47%;
+  background-color: #ffffff;
   width: 100%;
-  min-height: 415px;
+  height: 415px;
   margin-bottom: 5px;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  color: #000000;
+  background-color: #ffffff;
+  background-position: 0 0;
+  width: 760px;
+  height: 390px;
+  padding: 100px 100px;
+  bottom: 190px;
+  right: calc(50% - 480px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.75);
+  z-index: 200000;
 }
 
 .map h4  {
@@ -615,28 +640,21 @@ img {
 
 iframe {
   width: 100%;
+  height: 415px;
 }
 
 .contacts {
   display: inline-block;
   margin-left:  50px;
   margin-top: 46px;
+  vertical-align: middle;
 }
 
-.modal {
-  position: fixed;
-  display: none;
-  color: #000000;
-  background-color: #ffffff;
-  background-position: 0 0;
-  width: 760px;
-  height: 390px;
-  padding: 100px 100px;
-  bottom: 195px;
-  left: 470px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.75);
-  z-index: 200000;
-  }
+button.btn-red:active .modal {
+  display: block;
+}
+
+
 
 @keyframes bounce {
   0% {transform: translateY(-2000px);}
@@ -821,6 +839,7 @@ iframe {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-top: 10px;
 }
 
  .footer-social {
@@ -856,7 +875,7 @@ iframe {
 .main-footer .friends {
 
   margin-left: 140px;
-  margin-top: -10px;
+  margin-top: 0px;
 }
 
 /* Страница Каталога*/
@@ -864,14 +883,23 @@ iframe {
 .main-header-catalog {
   margin-bottom: 80px;
   width: 100%;
-  min-height: 355px;
-  background: #eeeeee no-repeat;
+  height: 355px;
+  background-color: #eeeeee;
+  background-position: right;
   background-size:  cover ;
+  display: inline-table;
+  }
+
+.catalog {
+
+  width: 100%;
 }
 
 .slider-catalog {
   margin-top: 65px;
-}
+  background: #eeeeee;
+
+  }
 
 .slider-catalog  h1 {
   font-size: 55px;
@@ -888,6 +916,7 @@ iframe {
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
+
   }
 
 .price .legend {
@@ -1013,12 +1042,15 @@ iframe {
   background-image:
     url(../img/radio-off.svg);
   background-repeat: no-repeat;
+  background-color: #ffffff;
   cursor: pointer;
   opacity: 0.4;
+  vertical-align: top;
 }
 
 .filter-option input[type="radio"]:checked ~ label:before {
   background-image: url(../img/radio-on.svg);
+  background-color: #ffffff;
 }
 
 .filter-option input[type="radio"]:focus ~ label {
@@ -1056,12 +1088,15 @@ iframe {
   content: '';
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
+  background-color: #ffffff;
   cursor: pointer;
   opacity: 0.4;
+  vertical-align: top;
   }
 
 .filter-option input[type="checkbox"]:checked ~ label:before {
   background-image: url(../img/checkbox-on.svg);
+  background-color: #ffffff;
 }
 
 .filter-option input[type="checkbox"]:focus ~ label {
@@ -1151,6 +1186,7 @@ input[type="checkbox"]:disabled {
                 url("../img/icon-down-dir.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: 70% 5%, 0 5%;
+  background-color: #ffffff;
   opacity: 1;
   margin-left: 50px;
 
@@ -1203,6 +1239,7 @@ input[type="checkbox"]:disabled {
   height: 50px;
   background-image: url("../img/browser.svg");
   background-repeat: no-repeat;
+  background-color: #eeeeee;
   top: -40px;
   opacity: 0.12;
 }
