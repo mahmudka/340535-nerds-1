@@ -24,6 +24,7 @@ html {
  */
 
 body {
+  -webkit-background-clip: text;
   margin: 0;
 }
 
@@ -159,6 +160,7 @@ dfn {
 /**
  * Add the correct background and color in IE 9-.
  */
+
 
 mark {
   background-color: #ff0;

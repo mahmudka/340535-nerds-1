@@ -84,7 +84,7 @@ a {
 
   background-color: #eeeeee;
   border: none;
-  border-radius: 2px;
+  border-radius: 2px / 2px;
 }
 
 .btn:hover,
@@ -153,6 +153,7 @@ a {
   width: 190px;
 }
 
+
 .filter-button {
   color: #000000;
   font-weight: 700;
@@ -186,7 +187,7 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   background-color: #eeeeee;
-  border-radius: 2px;
+  border-radius: 2px / 2px;
   border: 3px solid #eeeeee;
 
   color: #000000;
@@ -241,7 +242,7 @@ img {
   background:#ffffff;
   border:7px solid white;
   vertical-align:top;
-  border-radius:50%;
+  border-radius: 50% / 50%;
   cursor:pointer;
 }
 .slider-controls .active{
@@ -330,6 +331,10 @@ header {
 }
 
 .main-navigation {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -339,11 +344,17 @@ header {
 }
 
 .site-navigation   {
-  display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-left: 0;
   width: 450px;
+  overflow: hidden;
+  text-overflow: clip;
   }
 
 
@@ -369,7 +380,11 @@ header {
 }
 
 .services {
-  display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
 }
@@ -418,7 +433,11 @@ header {
 }
 
 .about {
- display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+   display: flex;
   padding-top: 70px;
   margin-bottom: 45px;
 }
@@ -523,11 +542,15 @@ header {
 }
 
 .partners ul {
-  margin: 0;
-  padding: 0;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -608,11 +631,12 @@ header {
   width: 760px;
   height: 390px;
   padding: 100px 100px;
-  bottom: 190px;
+  bottom: 50px;
   right: calc(50% - 480px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.75);
   z-index: 200000;
 }
+
 
 .map h4  {
   margin: 0;
@@ -650,12 +674,6 @@ iframe {
   vertical-align: middle;
 }
 
-button.btn-red:active .modal {
-  display: block;
-}
-
-
-
 @keyframes bounce {
   0% {transform: translateY(-2000px);}
   70% {transform: translateY(30px);}
@@ -663,6 +681,7 @@ button.btn-red:active .modal {
   100% {transform: translateY(0);}
 }
 
+#contact-form:target,
 .modal-show {
   display: block;
   animation-name: bounce;
@@ -758,6 +777,10 @@ button.btn-red:active .modal {
 }
 
 .login-form {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex ;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -814,6 +837,10 @@ button.btn-red:active .modal {
 }
 
 .main-footer {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -843,7 +870,11 @@ button.btn-red:active .modal {
 }
 
  .footer-social {
-  display: flex;
+   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+   display: -ms-flexbox;      /* TWEENER - IE 10 */
+   display: -webkit-flex;     /* NEW - Chrome */
+   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 260px;
@@ -852,6 +883,10 @@ button.btn-red:active .modal {
 }
 
 .social-btn {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -859,7 +894,7 @@ button.btn-red:active .modal {
   height: 80px;
 
   background-color: #e1e1e1;
-  border-radius: 50%;
+  border-radius: 50% / 50%;
 }
 
 .social-btn:hover,
@@ -888,7 +923,7 @@ button.btn-red:active .modal {
   background-position: right;
   background-size:  cover ;
   display: inline-table;
-  }
+    }
 
 .catalog {
 
@@ -902,17 +937,25 @@ button.btn-red:active .modal {
   }
 
 .slider-catalog  h1 {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+   display: flex;
   font-size: 55px;
   line-height: 55px;
   font-weight: bold;
   text-transform: inherit;
-  display: flex;
   margin: auto;
   justify-content: center;
   align-items: center;
 }
 
 .inner-page {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
@@ -954,7 +997,7 @@ button.btn-red:active .modal {
   margin-bottom: 15px;
   padding: 0 25px;
   background: #f1f1f1;
-  border-radius: 5px;
+  border-radius: 5px / 5px;
   overflow: hidden;
 }
 
@@ -978,7 +1021,7 @@ button.btn-red:active .modal {
   border: 8px solid white;
   background: #ababab;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 50% / 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
 }
 
@@ -998,7 +1041,7 @@ button.btn-red:active .modal {
   font-style: normal;
   text-align: center;
   color: #283136;
-  border-radius: 5px;
+  border-radius: 5px / 5px;
 }
 
 .price-contols .min-price {
@@ -1121,6 +1164,10 @@ input[type="checkbox"]:disabled {
 }
 
 .sorting {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1134,7 +1181,11 @@ input[type="checkbox"]:disabled {
 
 .sorting-all {
   width: 360px;
-  display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
   justify-content: space-between;
 
 }
@@ -1207,12 +1258,14 @@ input[type="checkbox"]:disabled {
 }
 
 .makets-all ul {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
-  width: 760px;
   flex-wrap: wrap;
-
   justify-content: space-between;
-
+  width: 760px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1290,9 +1343,13 @@ input[type="checkbox"]:disabled {
 }
 
 .pagination-list {
-  width: 450px;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   justify-content: space-between;
+  width: 450px;
   margin-right: 5px;
   }
 
